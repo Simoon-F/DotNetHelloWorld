@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/simon/Documents/Demo/HelloWord/HelloWord.Core/HelloWord.Core.csproj": {}
+  },
+  "projects": {
+    "/Users/simon/Documents/Demo/HelloWord/HelloWord.Core/HelloWord.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/simon/Documents/Demo/HelloWord/HelloWord.Core/HelloWord.Core.csproj",
+        "projectName": "HelloWord.Core",
+        "projectPath": "/Users/simon/Documents/Demo/HelloWord/HelloWord.Core/HelloWord.Core.csproj",
+        "packagesPath": "/Users/simon/.nuget/packages/",
+        "outputPath": "/Users/simon/Documents/Demo/HelloWord/HelloWord.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/simon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Mediator.Net.Autofac": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "dbup": {
+              "target": "Package",
+              "version": "[5.0.37, )"
+            },
+            "dbup-mysql": {
+              "target": "Package",
+              "version": "[5.0.37, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

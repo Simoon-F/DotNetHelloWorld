@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{444A2A10-41BC-40C5-B4D7-8E3EFD5C3759}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWord/Controllers/HelloController.cs">
+    <Files>
+      <File FileName="HelloWord/Controllers/HelloController.cs" Line="9" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HelloWord" expanded="True">
+            <Node name="Facade" expanded="True">
+              <Node name="HelloWord" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="HelloController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Libraries" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Facade.HelloWord PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+</Properties>

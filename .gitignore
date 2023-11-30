@@ -261,3 +261,6 @@ __pycache__/
 
 #swagger xml
 Barcode.Api.xml
+
+# Ignore ReSharper user-specific files
+HelloWord.sln.DotSettings.user

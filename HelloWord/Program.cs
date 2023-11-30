@@ -16,8 +16,7 @@ builder.Services.AddSwaggerGen();
 new DbUpRunner(new SystemConnectionString(builder.Configuration).Mysql).Run();
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
-    .ConfigureContainer<ContainerBuilder>(b => b.RegisterModule(new SystemModule(builder.Configuration))
-);
+    .ConfigureContainer<ContainerBuilder>(b => b.RegisterModule(new SystemModule(builder.Configuration)));
 
 var app = builder.Build();
 

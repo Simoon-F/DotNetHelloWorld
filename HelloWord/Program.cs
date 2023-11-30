@@ -13,15 +13,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var mysql = new SystemConnectionString(builder.Configuration).Mysql;
+new DbUpRunner(new SystemConnectionString(builder.Configuration).Mysql).Run();
 
-if (mysql is not null)
-{
-    new DbUpRunner(mysql).Run();
-}
-
-builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-builder.Host.ConfigureContainer<ContainerBuilder>(b => b.RegisterModule(new SystemModule(builder.Configuration))
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
+    .ConfigureContainer<ContainerBuilder>(b => b.RegisterModule(new SystemModule(builder.Configuration))
 );
 
 var app = builder.Build();

@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWord.Core", "HelloWord.Core\HelloWord.Core.csproj", "{2827AB76-7ED9-43E9-82BB-DE6CC0C1FA2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWord.Messages", "HelloWord.Messages\HelloWord.Messages.csproj", "{1318DB66-5065-4114-BFCF-A322DA7A3362}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,9 +24,14 @@ Global
 		{2827AB76-7ED9-43E9-82BB-DE6CC0C1FA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2827AB76-7ED9-43E9-82BB-DE6CC0C1FA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2827AB76-7ED9-43E9-82BB-DE6CC0C1FA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1318DB66-5065-4114-BFCF-A322DA7A3362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1318DB66-5065-4114-BFCF-A322DA7A3362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1318DB66-5065-4114-BFCF-A322DA7A3362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1318DB66-5065-4114-BFCF-A322DA7A3362}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{444A2A10-41BC-40C5-B4D7-8E3EFD5C3759} = {7AA37C38-BD80-414A-B366-11CF56375FE6}
 		{2827AB76-7ED9-43E9-82BB-DE6CC0C1FA2A} = {F16196FC-A194-4FA9-AEA1-42DF9236FD8D}
+		{1318DB66-5065-4114-BFCF-A322DA7A3362} = {F16196FC-A194-4FA9-AEA1-42DF9236FD8D}
 	EndGlobalSection
 EndGlobal

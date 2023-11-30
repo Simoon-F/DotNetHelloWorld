@@ -6,8 +6,8 @@ using Microsoft.Extensions.Configuration;
  {
      public SystemConnectionString(IConfiguration configuration)
      {
-         Mysql = configuration.GetConnectionString("Mysql");
+         Mysql = configuration.GetConnectionString("Mysql") ?? "";
      }
 
-     public string? Mysql { get; set; }
+     public string Mysql { get; set; }
  }

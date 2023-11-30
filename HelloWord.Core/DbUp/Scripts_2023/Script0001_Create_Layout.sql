@@ -4,4 +4,5 @@ create table if not exists posts (
     content mediumtext null ,
     create_at int not null,
     update_at int null
-)
+) engine = InnoDB
+default charset = utf8mb4;

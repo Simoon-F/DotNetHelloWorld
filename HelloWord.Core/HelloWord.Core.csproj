@@ -19,4 +19,8 @@
       <EmbeddedResource Include="DbUp\Scripts_2023\Script0001_Create_Layout.sql" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\HelloWord.Messages\HelloWord.Messages.csproj" />
+    </ItemGroup>
+
 </Project>

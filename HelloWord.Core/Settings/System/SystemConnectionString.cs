@@ -4,10 +4,10 @@ using Microsoft.Extensions.Configuration;
  
  public class SystemConnectionString: IConfigurationSetting
  {
+     public string Mysql { get; set; }
+
      public SystemConnectionString(IConfiguration configuration)
      {
          Mysql = configuration.GetConnectionString("Mysql") ?? "";
      }
-
-     public string Mysql { get; set; }
  }

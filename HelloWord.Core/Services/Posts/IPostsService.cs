@@ -1,7 +1,7 @@
-using HelloWord.Messages.Ioc;
+using HelloWord.Core.Ioc;
 using HelloWord.Messages.Requests.Posts;
 
-namespace HelloWord.Messages.Services.Posts;
+namespace HelloWord.Core.Services.Posts;
 
 public interface IPostsService: IScopedDependency
 {

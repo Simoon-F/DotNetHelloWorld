@@ -1,4 +1,4 @@
-namespace HelloWord.Messages.Ioc;
+namespace HelloWord.Core.Ioc;
 
 public interface IDependency
 {

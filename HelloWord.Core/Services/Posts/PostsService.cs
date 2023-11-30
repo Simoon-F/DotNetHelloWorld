@@ -1,7 +1,7 @@
 using AutoMapper;
 using HelloWord.Messages.Requests.Posts;
 
-namespace HelloWord.Messages.Services.Posts;
+namespace HelloWord.Core.Services.Posts;
 
 public partial class PostsService: IPostsService
 {
@@ -12,7 +12,7 @@ public partial class PostsService: IPostsService
         _mapper = mapper;
     }
 
-    public async Task<GetPostsListResponse> GetPostsListAsync(GetPostsListRequest request,
+    public Task<GetPostsListResponse> GetPostsListAsync(GetPostsListRequest request,
         CancellationToken cancellationToken)
     {
         var list = new List<GetPostsListResponseDto>
@@ -22,14 +22,16 @@ public partial class PostsService: IPostsService
                 Id = 1,
                 Title = "test",
                 Context = "Context",
-                CreateAt = new DateTimeOffset().DateTime
+                CreateAt = new DateTimeOffset(new DateTime(2023, 11, 30, 12, 0, 0), TimeSpan.Zero)
             }
         };
 
-        return new GetPostsListResponse()
+        var response =  new GetPostsListResponse()
         {
             Data = _mapper.Map<List<GetPostsListResponseDto>>(list)
         };
+        
+        return Task.FromResult(response);
     }
     
 }

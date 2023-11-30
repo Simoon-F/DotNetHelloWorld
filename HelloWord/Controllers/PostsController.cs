@@ -1,4 +1,3 @@
-using Google.Protobuf.WellKnownTypes;
 using HelloWord.Messages.Requests.Posts;
 using Mediator.Net;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +16,7 @@ public class PostsController : ControllerBase
     }
 
     [HttpGet("posts")]
-    public async Task<GetPostsListResponse> GetPostsListAsync([FromQuery] GetPostsListRequest request) =>
-        await _mediator.RequestAsync<GetPostsListRequest, GetPostsListResponse>(request);
+    public async Task<GetPostsListResponse> GetPostsListAsync([FromQuery] GetPostsListRequest request) {
+        return await _mediator.RequestAsync<GetPostsListRequest, GetPostsListResponse>(request);
+    }
 }

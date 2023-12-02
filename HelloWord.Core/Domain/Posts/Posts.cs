@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HelloWord.Core.Domain.Posts;
 
-public class Post: EntityAudit
+public class Posts: EntityAudit
 {
-    public Post()
+    public Posts()
     {
         
     }

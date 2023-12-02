@@ -23,25 +23,13 @@ public partial class PostsService: IPostsService
     public async Task<GetPostsListResponse> GetPostsListAsync(GetPostsListRequest request,
         CancellationToken cancellationToken)
     {
-        var response =  await _repository.Query<Post>().ToListAsync(cancellationToken).ConfigureAwait(false);
+        var postsList =  await _repository.Query<Domain.Posts.Posts>().ToListAsync(cancellationToken).ConfigureAwait(false);
 
-        // var list = new List<GetPostsListResponseDto>
-        // {
-        //     new GetPostsListResponseDto
-        //     {
-        //         Id = 1,
-        //         Title = "test",
-        //         Context = "Context",
-        //         CreateAt = new DateTimeOffset(new DateTime(2023, 11, 30, 12, 0, 0), TimeSpan.Zero)
-        //     }
-        // };
-        
-        var response2 =  new GetPostsListResponse()
+        return  new GetPostsListResponse()
         {
-            Data = _mapper.Map<List<GetPostsListResponseDto>>(response)
+            Data = _mapper.Map<List<GetPostsListResponseDto>>(postsList)
         };
         
-        return response2;
     }
     
 }

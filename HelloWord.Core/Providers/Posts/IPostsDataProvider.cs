@@ -5,6 +5,6 @@ namespace HelloWord.Core.Providers.Posts;
 
 public interface IPostsDataProvider: IScopedDependency
 {
-    Task<IList<Post>> GetAllAsync(CancellationToken cancellationToken = default);
+    Task<IList<Domain.Posts.Posts>> GetAllAsync(CancellationToken cancellationToken = default);
 
 }

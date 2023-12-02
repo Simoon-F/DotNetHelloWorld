@@ -19,7 +19,7 @@ public class EfRepository: IRepository
         return _dbContext.Set<TEntity>().ToListAsync(cancellationToken);
     }
 
-    public IQueryable<TEntity> Query<TEntity>(Expression<Func<TEntity, bool>> predicate = null)
+    public IQueryable<TEntity> Query<TEntity>(Expression<Func<TEntity, bool>>? predicate = null)
         where TEntity : EntityBase
     {
         return predicate == null

@@ -7,7 +7,6 @@ public class Posts: EntityAudit
 {
     public Posts()
     {
-        
     }
     
     [Key]

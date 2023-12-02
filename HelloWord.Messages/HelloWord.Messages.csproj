@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="Mediator.Net" Version="4.8.0" />
+      <PackageReference Include="MySql.Data" Version="8.2.0" />
     </ItemGroup>
 
 </Project>

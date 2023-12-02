@@ -45,6 +45,8 @@ public class SystemModule: Module
             .Where(t => t.IsClass && typeof(IConfigurationSetting).IsAssignableFrom(t))
             .ToArray();
 
+        // AsSelf ： 表示使用类型自身作为服务类型。这意味着每个类型都可以通过其自身类型进行解析
+        // SingleInstance ：表示注册的组件是单例的，即在整个应用程序生命周期中只创建一个实例
         builder.RegisterTypes(settingTypes).AsSelf().SingleInstance();
     }
 

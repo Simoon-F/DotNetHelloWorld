@@ -9,9 +9,7 @@ namespace HelloWord.Core.Domain.Mapping;
 /// 用于定义实体与数据库表之间的映射关系。
 /// 在数据库中创建表格时，指定表名、主键、列名等信息。
 /// 配置实体属性与数据库列之间的映射规则。
-/// 在你的情况下，PostsMap 通过 IEntityTypeConfiguration&lt;Posts.Posts&gt; 接口配置了 Domain.Posts.Posts 实体与数据库表的映射关系。
-///
-///
+/// PostsMap 通过 IEntityTypeConfiguration<Posts.Posts/> 接口配置了 Domain.Posts.Posts 实体与数据库表的映射关系。
 ///
 /// Entity Framework Core 配置是为了将实体与数据库表进行关联
 /// </summary>
